@@ -160,6 +160,11 @@ ul { list-style: none; }
   50% { filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.6)) brightness(1.4); }
 }
 
+.contato {
+  --bg: #0c0c16;
+  --bg-2: #1a1a24;
+}
+
 .logo-img {
   height: 32px;
   width: auto;
@@ -172,6 +177,67 @@ ul { list-style: none; }
 .logo-img:hover {
   transform: scale(1.15) rotate(2deg);
   animation: none;
+}
+
+/* Formulário de contato */
+.contato-form {
+  max-width: 600px;
+  margin-top: 2rem;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1.2rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15);
+}
+
+.form-group input::placeholder {
+  color: var(--muted);
+}
+
+.form-group input[type="tel"] {
+  padding-right: 4rem;
+}
+
+.form-group button.btn-primary {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
 }
 .logo-mark {
   width: 38px; height: 38px;
