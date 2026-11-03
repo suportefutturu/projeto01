@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WP Lab — E-book: Crie Sites Incríveis em WordPress do Zero</title>
+  <meta name="description" content="E-book completo para criar sites profissionais em WordPress. Do setup ao lançamento: temas, Elementor, WooCommerce, SEO e performance." />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%238b5cf6'/%3E%3Cstop offset='1' stop-color='%2322d3ee'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EW%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo" aria-label="WP Lab">
+        <span class="logo-mark">W</span>
+        <span class="logo-text">WP<em>Lab</em></span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#aprendizado" class="nav-link">Aprendizado</a>
+        <a href="#como-funciona" class="nav-link">Como funciona</a>
+        <a href="#resultados" class="nav-link">Resultados</a>
+        <a href="#baixar" class="btn btn-primary btn-sm nav-cta">Baixar E-book</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="blob blob-1"></div>
+      <div class="blob blob-2"></div>
+      <div class="blob blob-3"></div>
+      <div class="hero-grid"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="badge reveal">📘 E-book completo · Atualizado em 2026</span>
+
+        <h1 class="reveal" data-delay="100">
+          Aprenda a criar <span class="gradient-text">sites incríveis</span><br /> com WordPress
+        </h1>
+
+        <p class="hero-sub reveal" data-delay="200">
+          O guia definitivo para quem quer sair do “arrastar e soltar” e construir
+          sites reais, rápidos e profissionais com WordPress — do zero ao lançamento.
+        </p>
+
+        <div class="hero-actions reveal" data-delay="300">
+          <a href="#baixar" class="btn btn-primary">
+            Baixar o E-book
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0  -6 -6m6 6 6 -6"/><path d="M5 21h14"/></svg>
+          </a>
+          <a href="#aprendizado" class="btn btn-ghost">Ver o conteúdo</a>
+        </div>
+
+        <div class="hero-proof reveal" data-delay="400">
+          <div class="avatars" aria-hidden="true">
+            <span>MC</span>
+            <span>JR</span>
+            <span>AB</span>
+            <span>+9k</span>
+          </div>
+          <p><strong>+2.400 alunos</strong> já criaram seu primeiro site com o WP Lab</p>
+        </div>
+
+        <div class="hero-stats reveal" data-delay="450">
+          <div class="stat">
+            <span class="stat-num"><span class="counter" data-target="2400">0</span><em>+</em></span>
+            <span class="stat-label">alunos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span class="counter" data-target="4.9" data-decimals="1">0</span><em>/5</em></span>
+            <span class="stat-label">nota média</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span class="counter" data-target="40">0</span><em>+</em></span>
+            <span class="stat-label">aulas práticas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" data-delay="250">
+        <div class="book-scene" id="bookScene">
+          <div class="book" id="book">
+            <div class="book-face">
+              <div class="book-spine"></div>
+              <div class="book-content">
+                <span class="book-kicker">WP LAB</span>
+                <span class="book-type">E-book</span>
+                <h3>Crie Sites<br />em WordPress</h3>
+                <div class="book-rule"></div>
+                <span class="book-author">Guia completo de criação</span>
+              </div>
+            </div>
+          </div>
+          <div class="book-glow"></div>
+        </div>
+
+        <div class="float-chip chip-1">⚡ Velocidade</div>
+        <div class="float-chip chip-2">🎯 SEO</div>
+        <div class="float-chip chip-3">🛒 Loja</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>WordPress</span><i>✦</i><span>WooCommerce</span><i>✦</i><span>Elementor</span><i>✦</i><span>Divi</span><i>✦</i><span>ACF</span><i>✦</i><span>Jetpack</span><i>✦</i><span>Gutenberg</span><i>✦</i>
+      <span>WordPress</span><i>✦</i><span>WooCommerce</span><i>✦</i><span>Elementor</span><i>✦</i><span>Divi</span><i>✦</i><span>ACF</span><i>✦</i><span>Jetpack</span><i>✦</i><span>Gutenberg</span><i>✦</i>
+    </div>
+  </div>
+
+  <!-- ================= APRENDIDO ================= -->
+  <section class="section" id="aprendizado">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">📚 O conteúdo</span>
+        <h2>Todo o conhecimento para <span class="gradient-text">construir</span> do zero</h2>
+        <p>Um guia completo com <strong>12 módulos</strong>, <strong>+40 aulas práticas</strong> e templates reais — escrito por quem já entrega sites.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card reveal" data-delay="0">
+          <div class="card-icon">🎯</div>
+          <h3>Fundamentos sólidos</h3>
+          <p>Tema, plugins, usuários e o ecossistema WordPress: o que cada parte faz e como elas se conectam.</p>
+        </article>
+
+        <article class="card reveal" data-delay="80">
+          <div class="card-icon">🧩</div>
+          <h3>Construtores de página</h3>
+          <p>Elementor, Bricks e Gutenberg na prática — layouts complexos sem escrever uma linha de código.</p>
+        </article>
+
+        <article class="card reveal" data-delay="160">
+          <div class="card-icon">💻</div>
+          <h3>Mundo PHP</h3>
+          <p>Entenda o motor por trás: header, footer, custom post types e hooks — para depurar e personalizar tudo.</p>
+        </article>
+
+        <article class="card reveal" data-delay="0">
+          <div class="card-icon">🛒</div>
+          <h3>WooCommerce</h3>
+          <p>Crie sua loja online completa: catálogo, carrinho, pagamentos, frete e emissão de nota.</p>
+        </article>
+
+        <article class="card reveal" data-delay="80">
+          <div class="card-icon">🚀</div>
+          <h3>Performance & SEO</h3>
+          <p>Site rápido, otimizado para Google e preparado para converter visitantes em clientes.</p>
+        </article>
+
+        <article class="card reveal" data-delay="160">
+          <div class="card-icon">🛡️</div>
+          <h3>Segurança</h3>
+          <p>Backups, atualizações e boas práticas para manter o site sempre vivo e estável.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMO FUNCIONA ================= -->
+  <section class="section section-alt" id="como-funciona">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">🗺️ Roteiro</span>
+        <h2>Do <span class="gradient-text">zero</span> ao site publicado</h2>
+        <p>Uma trilha passo a passo pensada para você não se perder em nenhum momento.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal" data-delay="0">
+          <span class="step-num">01</span>
+          <h3>Ambiente</h3>
+          <p>Setup do WordPress local (XAMPP) ou na nuvem, com tema base e plugins essenciais.</p>
+        </div>
+        <div class="step reveal" data-delay="100">
+          <span class="step-num">02</span>
+          <h3>Estrutura</h3>
+          <p>Estrutura de pastas, hierarquia de páginas e organização de conteúdo.</p>
+        </div>
+        <div class="step reveal" data-delay="200">
+          <span class="step-num">03</span>
+          <h3>Construção</h3>
+          <p>Criação das páginas principais usando Elementor com blocos prontos e customizações.</p>
+        </div>
+        <div class="step reveal" data-delay="300">
+          <span class="step-num">04</span>
+          <h3>Lançamento</h3>
+          <p>Publicação, SEO final, performance e checklist de verificação antes de vender.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= RESULTADOS / DEPOIMENTOS ================= -->
+  <section class="section" id="resultados">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="section-badge">⭐ Depoimentos</span>
+        <h2>Quem já usou, <span class="gradient-text">aprendeu</span></h2>
+      </div>
+
+      <div class="quotes-grid">
+        <blockquote class="quote reveal" data-delay="0">
+          <p>“Finalmente entendi como o WordPress encaixa tudo. Em duas semanas montei um site para meu negócio que antes eu achava impossível.”</p>
+          <footer><span class="quote-avatar">MC</span><div><strong>Maria Clara</strong><small>Empreendedora · loja de artesanato</small></div></footer>
+        </blockquote>
+        <blockquote class="quote reveal" data-delay="120">
+          <p>“O passo a passo de SEO e performance salvou meu projeto. O site ficou rápido e apareceu no Google no primeiro mês.”</p>
+          <footer><span class="quote-avatar">JR</span><div><strong>João Roberto</strong><small>Consultor freelancer</small></div></footer>
+        </blockquote>
+        <blockquote class="quote reveal" data-delay="240">
+          <p>“Agora construo sites com Elementor no mesmo nível de agências. Desbloquei um novo serviço meu.”</p>
+          <footer><span class="quote-avatar">AB</span><div><strong>Ana Beatriz</strong><small>Designer gráfica</small></div></footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CTA FINAL ================= -->
+  <section class="section cta-section" id="baixar">
+    <div class="container">
+      <div class="cta-panel reveal">
+        <div class="cta-glow" aria-hidden="true"></div>
+        <span class="badge">🎁 Gratuito para download</span>
+        <h2>Pronto para criar seu primeiro site?</h2>
+        <p>Você recebe o e-book completo em PDF + checklist de publicação, com acesso imediato.</p>
+        <a href="#" class="btn btn-light btn-lg">Baixar agora o E-book</a>
+        <small>Download imediato · Atualizações futuras inclusas</small>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo">
+        <span class="logo-mark">W</span>
+        <span class="logo-text">WP<em>Lab</em></span>
+      </a>
+      <nav class="footer-nav">
+        <a href="#aprendizado">Aprendizado</a>
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#baixar">Baixar</a>
+      </nav>
+      <p class="footer-copy">© <span id="year">2026</span> WP Lab · Criado com 💜 para quem quer dominar WordPress.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
