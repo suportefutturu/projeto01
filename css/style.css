@@ -155,10 +155,23 @@ ul { list-style: none; }
 }
 .header-inner { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 0; }
 
+@keyframes logoGlow {
+  0%, 100% { filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.4)); }
+  50% { filter: drop-shadow(0 0 25px rgba(139, 92, 246, 0.6)) brightness(1.4); }
+}
+
 .logo-img {
   height: 32px;
   width: auto;
   display: block;
+  filter: drop-shadow(0 0 12px rgba(139, 92, 246, 0.4));
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  animation: logoGlow 4s ease-in-out infinite;
+}
+
+.logo-img:hover {
+  transform: scale(1.15) rotate(2deg);
+  animation: none;
 }
 .logo-mark {
   width: 38px; height: 38px;
